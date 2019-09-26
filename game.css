@@ -1,0 +1,19 @@
+#gameCanvas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.scores {
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Antic Slab', serif;
+}
+
+#start {
+  color: red;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 30px;
+}
