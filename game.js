@@ -15,6 +15,7 @@ function game(gametype) {
   var key;
   var count = 20;
   var keyU = true;
+  var check;
 
   function events() {
     document.addEventListener("keydown", startGame);
@@ -109,7 +110,7 @@ function game(gametype) {
         foodObj.type = 'red';
       }
     }
-        
+
 
     this.didGameEnd = function () {
       snake = snakeObj.snakeValues();
@@ -124,7 +125,7 @@ function game(gametype) {
         for (let i = 0; i < wall.length; i++) {
           if (wall[i].x === snake[0].x && wall[i].y === snake[0].y) return true
         }
-      } 
+      }
 
       const hitLeftWall = snake[0].x < 0;
       const hitRightWall = snake[0].x > gameCanvas.width - 10;
@@ -148,7 +149,7 @@ function game(gametype) {
         keyU = false;
         key = new Date().getTime();
       }
-      
+
       if(new Date().getTime() >= (key + count) && !keyU) {
         snake_speed = 50;
       } else {
