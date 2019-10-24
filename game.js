@@ -15,6 +15,7 @@ function game(gametype) {
   var key;
   var count = 20;
   var keyU = true;
+  var check;
 
   function events() {
     document.addEventListener("keydown", startGame);
